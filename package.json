@@ -1,0 +1,29 @@
+{
+    "name": "aipick",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "sync:notion": "node src/lib/notion-sync.mjs"
+    },
+    "dependencies": {
+        "@notionhq/client": "2.2.15",
+        "clsx": "2.1.1",
+        "next": "15.1.6",
+        "ogl": "^1.0.11",
+        "react": "19.0.0",
+        "react-dom": "19.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "22.10.7",
+        "@types/react": "19.0.7",
+        "@types/react-dom": "19.0.3",
+        "autoprefixer": "10.4.20",
+        "postcss": "8.5.1",
+        "tailwindcss": "3.4.17",
+        "typescript": "5.7.3"
+    }
+}

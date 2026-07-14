@@ -1,0 +1,1 @@
+﻿var fs = require("fs"); var p = "D:/Desktopnew/ai-hub/src/components/Lightfall.tsx"; var c = fs.readFileSync(p, "utf8"); c = "\"use client\";\n\n" + c; fs.writeFileSync(p, c); console.log("Added use client");

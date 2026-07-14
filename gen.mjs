@@ -1,0 +1,24 @@
+﻿var fs=require("fs");
+var lines=[];
+function L(s){lines.push(s)}
+var Q=String.fromCharCode(34);
+L(Q+"use client"+Q+";");
+L("");
+L("import { useState, useMemo, useRef, useEffect } from "+Q+"react"+Q+";");
+L("import ShinyText from "+Q+"@/components/ShinyText"+Q+";");
+L("import IconFallback from "+Q+"@/components/IconFallback"+Q+";");
+L("");
+L("const allCategories = [");
+L("];");
+L("");
+L("const allTools = allCategories.flatMap(cat =>");
+L("  cat.tools.map(t => ({ ...t, category: cat.name, catId: cat.id }))");
+L(");");
+L("");
+L("export default function Home() {");
+L("  const [query, setQuery] = useState("+Q+");");
+L("  const [activeCat, setActiveCat] = useState<string | null>("+Q+"hot"+Q+");");
+L("  return (<div>Hello</div>);");
+L("}");
+fs.writeFileSync("D:/Desktopnew/ai-hub/src/app/page.tsx", lines.join("\n"), "utf8");
+console.log("Done:", lines.length, "lines");

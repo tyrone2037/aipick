@@ -1,0 +1,1 @@
+﻿var fs = require("fs"); var p = "D:/Desktopnew/ai-hub/src/components/Lightfall.tsx"; var buf = fs.readFileSync(p); if (buf[0] === 0xEF && buf[1] === 0xBB && buf[2] === 0xBF) { buf = buf.slice(3); fs.writeFileSync(p, buf); console.log("BOM removed"); } else { console.log("No BOM"); }

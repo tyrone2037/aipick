@@ -1,0 +1,1 @@
+﻿var lines = require("fs").readFileSync("D:/Desktopnew/ai-hub/src/components/Lightfall.tsx", "utf8").split("\n"); for (var i = 225; i < 230; i++) console.log((i+1) + ": " + lines[i]);
